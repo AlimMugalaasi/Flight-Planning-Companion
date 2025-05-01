@@ -1,42 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fuel Burn Calculator</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-br from-slate-900 to-slate-700 min-h-screen text-white flex items-center justify-center p-4">
-
-  <div class="w-full max-w-md bg-white/10 backdrop-blur rounded-2xl shadow-lg p-6 space-y-6">
-    <h1 class="text-2xl font-bold text-center text-white">⛽ Fuel Burn Calculator</h1>
-
-    <form id="fuelForm" class="space-y-4">
-      <div>
-        <label class="block text-sm font-semibold text-white">Fuel Burn Rate (gal/hr)</label>
-        <input type="number" step="0.1" id="burnRate" required class="w-full mt-1 p-2 rounded bg-white/20 text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
-      </div>
-
-      <div>
-        <label class="block text-sm font-semibold text-white">Flight Time (minutes)</label>
-        <input type="number" id="timeMinutes" required class="w-full mt-1 p-2 rounded bg-white/20 text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
-      </div>
-
-      <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded-xl transition">Calculate</button>
-    </form>
-
-    <div id="result" class="text-center text-lg font-medium text-emerald-300"></div>
-  </div>
-
-  <script>
-    document.getElementById('fuelForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const burnRate = parseFloat(document.getElementById('burnRate').value);
-      const timeMinutes = parseFloat(document.getElementById('timeMinutes').value);
-      const fuelUsed = (burnRate * timeMinutes) / 60;
-      document.getElementById('result').textContent = `Fuel Burned: ${fuelUsed.toFixed(2)} gallons`;
-    });
-  </script>
-
-</body>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flightcomputer.online</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    
+  </body>
 </html>
