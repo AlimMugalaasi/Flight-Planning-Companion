@@ -1,4 +1,4 @@
-#   flightcomputer.online
+#   Flight Planning Companion
 
 ## License
 
